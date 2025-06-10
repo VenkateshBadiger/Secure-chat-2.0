@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: secure-chat-backend
+    env: node
+    plan: free
+    buildCommand: cd backend && npm install
+    startCommand: cd backend && npm run start
+    envVars:
+      - key: MONGO_URI
+        value: mongodb+srv://admin:admin12345@secure-chat-2.pvdkl9o.mongodb.net/?retryWrites=true&w=majority&appName=Secure-chat-2
+      - key: PORT
+        value: 3001
+
+  - type: web
+    name: secure-chat-client
+    env: node
+    plan: free
+    buildCommand: cd client && npm install && npm run build
+    startCommand: cd client && serve -s build
+    staticPublishPath: client/build

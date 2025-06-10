@@ -39,16 +39,17 @@ const App = () => {
           className={`${styles.header}
           ${darkMode === true ? styles.darkModeHeader : styles.lightModeHeader}`}
         >
-          🔐 Disposable e2ee-chat
+          🔐 Secure chat 
           <ThemeToggle />
         </div>
         <div className={`${styles.sectionDefault} ${!darkMode && styles.sectionDefaultLight}`}>
           <div className={styles.title}>
-            Secure, end-to-end encrypted environment for exchanging sensitive information with peer.
+            Secure Chat : Temporary chat with AI based Dynamic keys for encryption.
           </div>
           <div className={styles.description}>
             <ul>
-              <li>No login/ signup required.</li>
+              <li>Worried that someone might go through your data, Worry no more !</li>
+              <li>No login, no signup required.</li>
               <li>No tracker</li>
               <li>
                 Your messages are <b>end-to-end</b> encrypted - technically impossible to read your
@@ -79,7 +80,11 @@ const App = () => {
           }`}
         >
           <div className={styles.title}>
-            ❤️ The source-code is public on&nbsp;
+          
+              🔐 Secure Your Chats in 5 Simple Steps!
+            {
+              
+          /* ❤️ The source-code is public on&nbsp;
             <a
               href="https://github.com/muke1908/chat-e2ee"
               target="_blank"
@@ -88,7 +93,44 @@ const App = () => {
               Github
             </a>
             , feel free to contribute!
-          </div>
+          */
+            }
+          </div>  
+          <div className={styles.description}>
+                <ul>
+                  <li>Join a Chat Room — Share a link and connect instantly.</li>
+
+                  <li>AI Creates a Secret Key — A smart LSTM model generates a unique AES key just for your chat.</li>
+
+                  <li>Encrypt Before Sending — Your message is scrambled into secret code before it leaves your device.</li>
+
+                  <li>Send It Securely — The encrypted message flies safely across the web.</li>
+
+                  <li>Decrypt on Arrival — Only your friend can unlock and read it.</li>
+
+                  <li>💬 Result?</li>
+                  <li>Private chats, zero snooping — like texting in invisibility mode. 🕵️‍♂️✨</li>
+                </ul>
+            </div>
+
+          <div className={styles.title}>
+          
+            ✨ Team members:
+  
+          </div>  
+          <div className={styles.description}>
+                <ul>
+                  <li>Venkatesh Badiger - 1MS22AD060</li>
+
+                  <li>Neeraj Walasang - 1MS22AD037</li>
+
+                  <li>Sneha Zimolson Paul - 1MS22AD056</li>
+
+                  <li>Gokul Naik - 1MS22AD024</li>
+
+                </ul>
+            </div>    
+          
         </div>
       </div>
     </>
