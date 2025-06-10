@@ -18,9 +18,9 @@ const SOCKET_LISTENERS: Record<string, SocketListenerType> = {
 
 const getBaseURL = (): string => {
     const { socketURL } = configContext();
-    const BASE_URI = socketURL || (process.env.NODE_ENV === "production" ? 'https://chat-e2ee-2.azurewebsites.net' : '');
-    return BASE_URI;
+    return socketURL || '';
 }
+
 
 export class SocketInstance {
     private socket: Socket;
